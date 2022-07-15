@@ -1,26 +1,61 @@
+/* Global */
 @font-face {font-family: 'ComicNeue-Bold'; src: url(../fonts/ComicNeue-Bold.ttf);}
 
+* {
+    font-family: 'ComicNeue-Bold';
+}
+/* --Global */
+
+/* Page */
 body {
     font-family: comic;
-    background-color: #eed9f1;
     margin: 0px;
     font-family: Arial, Helvetica, sans-serif;
 }
+main {
+    display: flex;
+    margin-top: 30px;
+}
+/* --Page */
 
+/* About flex */
+div#parent-properties {
+    margin: 20px;
+    width: 50%;
+}
+div#parent-properties div.content {
+    background: linear-gradient(rgba(156, 39, 176, 0.2), #fff);
+}
 
+div#children-properties {
+    width: 50%;
+    margin: 20px;
+}
+div#children-properties div.content {
+    background: linear-gradient(rgba(255, 138, 0, 0.2), #fff);
+}
+/* --About flex */
+
+/* Organize sections */
+h1{
+    text-align: center;
+}
 section {
     display: flex;
     flex-direction: column;
     align-items: center;
     width: 100%;
-    margin-top: 50px;
+    /* padding: 20px; */
+    padding-bottom: 50px;
+    padding-top: 30px;
 }
-section > h1 {
-    font-family: 'ComicNeue-Bold';
+section > h2 {
     text-align: center;
-    margin-bottom: 5px;
+    margin: 0px 0px 5px 0px;
 }
+/* --Organize sections */
 
+/* Flex */
 .flex-container {
     display: flex;
     background-color: #995db5;
@@ -28,13 +63,8 @@ section > h1 {
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 5px 5px 0px #7a4a91;
-    width: 900px;
+    width: 80%;
     margin: 0px 15px 0px 15px;
-}
-@media only screen and (max-width: 930px) {
-    .flex-container {
-        width: 90%;
-    }
 }
 
 .flex-child {
@@ -44,4 +74,16 @@ section > h1 {
     border-radius: 5px;
     box-shadow: 3px 3px 0px #7a4a91;
     cursor: default;
+}
+/* --Flex */
+
+@media only screen and (max-width: 1000px){
+    main {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    div#parent-properties, div#children-properties {
+        width: 90%;
+    }
 }
