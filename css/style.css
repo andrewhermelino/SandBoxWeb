@@ -1,14 +1,24 @@
+@font-face {font-family: 'ComicNeue-Bold'; src: url(../fonts/ComicNeue-Bold.ttf);}
+
 body {
+    font-family: comic;
     background-color: #eed9f1;
     margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-.main {
+
+
+section {
     display: flex;
-    justify-content: center;
-    align-content: center;
+    flex-direction: column;
+    align-items: center;
     width: 100%;
-    position: fixed;
-    top: 20%;
+    margin-top: 50px;
+}
+section > h1 {
+    font-family: 'ComicNeue-Bold';
+    text-align: center;
+    margin-bottom: 5px;
 }
 
 .flex-container {
@@ -21,6 +31,11 @@ body {
     width: 900px;
     margin: 0px 15px 0px 15px;
 }
+@media only screen and (max-width: 930px) {
+    .flex-container {
+        width: 90%;
+    }
+}
 
 .flex-child {
     background-color: #f7941f;
@@ -28,4 +43,5 @@ body {
     border: 2px solid black;
     border-radius: 5px;
     box-shadow: 3px 3px 0px #7a4a91;
+    cursor: default;
 }
