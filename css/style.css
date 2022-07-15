@@ -1,31 +1,7 @@
 body {
-    background-color: #eed9f1;
-    margin: 0px;
-}
-.main {
-    display: flex;
-    justify-content: center;
-    align-content: center;
-    width: 100%;
-    position: fixed;
-    top: 20%;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
-.flex-container {
-    display: flex;
-    background-color: #995db5;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    box-shadow: 5px 5px 0px #7a4a91;
-    width: 900px;
-    margin: 0px 15px 0px 15px;
-}
-
-.flex-child {
-    background-color: #f7941f;
-    padding: 10px;
-    border: 2px solid black;
-    border-radius: 5px;
-    box-shadow: 3px 3px 0px #7a4a91;
+h1 {
+    text-align: center;
 }
