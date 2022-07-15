@@ -16,6 +16,9 @@ main {
     display: flex;
     margin-top: 30px;
 }
+img {
+    max-width: 400px;
+}
 /* --Page */
 
 /* About flex */
@@ -33,6 +36,10 @@ div#children-properties {
 }
 div#children-properties div.content {
     background: linear-gradient(rgba(255, 138, 0, 0.2), #fff);
+}
+
+div.header {
+    text-align: center;
 }
 /* --About flex */
 
