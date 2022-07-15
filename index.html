@@ -18,26 +18,69 @@
             <div class="content">
 
                 <section class="parent-properties">
-                    <h2>It's a Flex example</h2>
-                    <div class="flex-container">
-                        <div class="flex-child">
-                            <p>Opa</p>
+                    <h2>flex-direction</h2>
+                    <style>
+                        .flex-container {
+                            justify-content: space-around;
+                            max-width: 500px;
+                        }
+
+                        .flex-direction-row {
+                            flex-direction: row;
+                        }
+                        .flex-direction-row-reverse {
+                            flex-direction: row-reverse;
+                        }
+                        .flex-direction-column {
+                            flex-direction: column;
+                        }
+                        .flex-direction-column-reverse {
+                            flex-direction: column-reverse;
+                        }
+                    </style>
+                    <div style="display: flex; flex-direction: row">
+                        <div>
+                            <div>
+                                <div class="flex-container flex-direction-row">
+                                    <div class="flex-child square">1</div>
+                                    <div class="flex-child square">2</div>
+                                    <div class="flex-child square">3</div>
+                                    <div class="flex-child square">4</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-container flex-direction-row-reverse">
+                                    <div class="flex-child square">1</div>
+                                    <div class="flex-child square">2</div>
+                                    <div class="flex-child square">3</div>
+                                    <div class="flex-child square">4</div>
+                                </div>
+                            </div>
                         </div>
-                    </div>
-                </section>
-    
-                <section class="parent-properties">
-                    <h2>It's a Flex example</h2>
-                    <div class="flex-container">
-                        <div class="flex-child">
-                            <p>Opa</p>
+                        <div style="display: flex;">
+                            <div>
+                                <div class="flex-container flex-direction-column">
+                                    <div class="flex-child square">1</div>
+                                    <div class="flex-child square">2</div>
+                                    <div class="flex-child square">3</div>
+                                    <div class="flex-child square">4</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-container flex-direction-column-reverse">
+                                    <div class="flex-child square">1</div>
+                                    <div class="flex-child square">2</div>
+                                    <div class="flex-child square">3</div>
+                                    <div class="flex-child square">4</div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </section>
 
             </div>
         </div>
-        <div id="children-properties">
+        <!-- <div id="children-properties">
             <h1>Properties for the Children (flex items)</h1>
             <div class="content">
                 
@@ -60,7 +103,7 @@
                 </section>
 
             </div>
-        </div>
+        </div> -->
 
     </main>
 </body>
