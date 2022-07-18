@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=0, initial-scale=1.0">
+    <title>SandBoxWeb</title>
+</head>
+
+
+<link rel="stylesheet" href="src/css/style.css">
+<body>
+    <main>
+
+        <div id="parent-properties">
+            <div class="header">
+                <img src="src/images/parent-properties.svg" alt="Properties for the Parent">
+                <h1><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-properties-for-the-parentflex-container" target="_blank">Properties for the Parent (flex container)</a></h1>
+            </div>
+            <div class="content">
+
+                <section class="parent-properties">
+                    <h2><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flex-direction" target="_blank">flex-direction</a></h2>
+                    <style>
+                        .flex-container {
+                            justify-content: space-around;
+                            max-width: 500px;
+                        }
+
+                        .flex-direction-row {
+                            flex-direction: row;
+                        }
+                        .flex-direction-row-reverse {
+                            flex-direction: row-reverse;
+                        }
+                        .flex-direction-column {
+                            flex-direction: column;
+                        }
+                        .flex-direction-column-reverse {
+                            flex-direction: column-reverse;
+                        }
+
+                        .flex-direction {display: flex; flex-direction: row;}
+                        @media only screen and (max-width: 1400px){.flex-direction {flex-direction: column;}}
+                    </style>
+                    <div class="flex-direction">
+                        <div>
+                            <div>
+                                <div class="flex-container flex-direction-row">
+                                    <div class="flex-child square">1</div>
+                                    <div class="flex-child square">2</div>
+                                    <div class="flex-child square">3</div>
+                                    <div class="flex-child square">4</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-container flex-direction-row-reverse">
+                                    <div class="flex-child square">1</div>
+                                    <div class="flex-child square">2</div>
+                                    <div class="flex-child square">3</div>
+                                    <div class="flex-child square">4</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div style="display: flex;">
+                            <div>
+                                <div class="flex-container flex-direction-column">
+                                    <div class="flex-child square">1</div>
+                                    <div class="flex-child square">2</div>
+                                    <div class="flex-child square">3</div>
+                                    <div class="flex-child square">4</div>
+                                </div>
+                            </div>
+                            <div>
+                                <div class="flex-container flex-direction-column-reverse">
+                                    <div class="flex-child square">1</div>
+                                    <div class="flex-child square">2</div>
+                                    <div class="flex-child square">3</div>
+                                    <div class="flex-child square">4</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        <div id="children-properties">
+            <div class="header">
+                <img src="src/images/children-properties.svg" alt="Properties for the Children">
+                <h1><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-properties-for-the-childrenflex-items" target="_blank">Properties for the Children (flex items)</a></h1>
+            </div>
+            <div class="content">
+                
+                <section class="parent-properties">
+                    <h2><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-order" target="_blank">order</a></h2>
+                    <style>
+                        
+                    </style>
+                    <div class="flex-container">
+                        <div class="flex-child white-text square" style="order: 1">1</div>
+                        <div class="flex-child white-text retangle" style="order: 3">3</div>
+                        <div class="flex-child white-text square" style="order: 1">1</div>
+                        <div class="flex-child white-text square" style="order: 1">1</div>
+                        <div class="flex-child white-text square" style="order: 2">2</div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="flex-child white-text retangle" style="order: 2">2</div>
+                        <div class="flex-child white-text square" style="order: -1">-1</div>
+                        <div class="flex-child white-text square" style="order: 5">5</div>
+                        <div class="flex-child white-text square" style="order: 1">1</div>
+                        <div class="flex-child empty square" style="order: 99"></div>
+                    </div>
+                    <div class="flex-container flex-direction-column" style="min-width: 150px;">
+                        <div class="flex-child white-text" style="order: 2">2</div>
+                        <div class="flex-child white-text" style="order: 99">99</div>
+                        <div class="flex-child white-text" style="order: 2">2</div>
+                    </div>
+                </section>
+
+                <section class="parent-properties">
+                    <h2><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flex-grow" target="_blank">flex-grow</a></h2>
+                    <style>
+                        .flex-grow-1 {flex-grow: 1;}
+                        .flex-grow-2 {flex-grow: 2;}
+                    </style>
+                    <div class="flex-container">
+                        <div class="flex-child square white-text flex-grow-1">1</div>
+                        <div class="flex-child square white-text flex-grow-1">1</div>
+                        <div class="flex-child square white-text flex-grow-1">1</div>
+                    </div>
+                    <div class="flex-container" style="width: 100%;">
+                        <div class="flex-child square white-text flex-grow-1">1</div>
+                        <div class="flex-child square white-text flex-grow-2">2</div>
+                        <div class="flex-child square white-text flex-grow-1">1</div>
+                    </div>
+                </section>
+                
+                <section class="parent-properties">
+                    <h2><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/#aa-flex-shrink" target="_blank">flex-shrink</a></h2>
+                    <style>
+                        .flex-shrink-1 {flex-shrink: 1;}
+                        .flex-shrink-2 {flex-shrink: 2;}
+                    </style>
+                    <div class="flex-container">
+                        <div class="flex-child square white-text flex-shrink-1">1</div>
+                        <div class="flex-child square white-text flex-shrink-1">1</div>
+                        <div class="flex-child square white-text flex-shrink-1">1</div>
+                    </div>
+                    <div class="flex-container" style="width: 100%;">
+                        <div class="flex-child flex-shrink-1">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facere expedita praesentium ipsa ipsam, error natus saepe corrupti dolore hic ducimus similique, a qui, architecto ratione tenetur repudiandae. Excepturi, ea.
+                        </div>
+                        <div class="flex-child flex-shrink-2">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facere expedita praesentium ipsa ipsam, error natus saepe corrupti dolore hic ducimus similique, a qui, architecto ratione tenetur repudiandae. Excepturi, ea.
+                        </div>
+                        <div class="flex-child flex-shrink-1">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facere expedita praesentium ipsa ipsam, error natus saepe corrupti dolore hic ducimus similique, a qui, architecto ratione tenetur repudiandae. Excepturi, ea.
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </div>
+        
+    </main>
+
+    <footer>
+        <div class="flex-container">
+            <a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/" target="_blank">
+                Original >
+            </a>
+        </div>
+    </footer>
+
+</body>
+</html>
+<!--
+<section class="parent-properties">
+    <h2><a href="" target="_blank">Title here</a></h2>
+    <style>
+
+    </style>
+    <div class="flex-container">
+        <div class="flex-child square">1</div>
+        <div class="flex-child square">2</div>
+        <div class="flex-child square">3</div>
+        <div class="flex-child square">4</div>
+    </div>
+</section>
+-->
