@@ -117,7 +117,49 @@
                         <div class="flex-child white-text" style="order: 2">2</div>
                     </div>
                 </section>
+
+                <section class="parent-properties">
+                    <h2>flex-grow</h2>
+                    <style>
+                        .flex-grow-1 {flex-grow: 1;}
+                        .flex-grow-2 {flex-grow: 2;}
+                    </style>
+                    <div class="flex-container">
+                        <div class="flex-child square white-text flex-grow-1">1</div>
+                        <div class="flex-child square white-text flex-grow-1">1</div>
+                        <div class="flex-child square white-text flex-grow-1">1</div>
+                    </div>
+                    <div class="flex-container" style="width: 100%;">
+                        <div class="flex-child square white-text flex-grow-1">1</div>
+                        <div class="flex-child square white-text flex-grow-2">2</div>
+                        <div class="flex-child square white-text flex-grow-1">1</div>
+                    </div>
+                </section>
                 
+                <section class="parent-properties">
+                    <h2>flex-shrink</h2>
+                    <style>
+                        .flex-shrink-1 {flex-shrink: 1;}
+                        .flex-shrink-2 {flex-shrink: 2;}
+                    </style>
+                    <div class="flex-container">
+                        <div class="flex-child square white-text flex-shrink-1">1</div>
+                        <div class="flex-child square white-text flex-shrink-1">1</div>
+                        <div class="flex-child square white-text flex-shrink-1">1</div>
+                    </div>
+                    <div class="flex-container" style="width: 100%;">
+                        <div class="flex-child flex-shrink-1">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facere expedita praesentium ipsa ipsam, error natus saepe corrupti dolore hic ducimus similique, a qui, architecto ratione tenetur repudiandae. Excepturi, ea.
+                        </div>
+                        <div class="flex-child flex-shrink-2">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facere expedita praesentium ipsa ipsam, error natus saepe corrupti dolore hic ducimus similique, a qui, architecto ratione tenetur repudiandae. Excepturi, ea.
+                        </div>
+                        <div class="flex-child flex-shrink-1">
+                            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Porro facere expedita praesentium ipsa ipsam, error natus saepe corrupti dolore hic ducimus similique, a qui, architecto ratione tenetur repudiandae. Excepturi, ea.
+                        </div>
+                    </div>
+                </section>
+
             </div>
         </div>
         
@@ -128,7 +170,7 @@
 <section class="parent-properties">
     <h2>Title here</h2>
     <style>
-        ...
+
     </style>
     <div class="flex-container">
         <div class="flex-child square">1</div>
