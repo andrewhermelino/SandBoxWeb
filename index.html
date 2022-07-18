@@ -39,8 +39,11 @@
                         .flex-direction-column-reverse {
                             flex-direction: column-reverse;
                         }
+
+                        .flex-direction {display: flex; flex-direction: row;}
+                        @media only screen and (max-width: 1400px){.flex-direction {flex-direction: column;}}
                     </style>
-                    <div style="display: flex; flex-direction: row">
+                    <div class="flex-direction">
                         <div>
                             <div>
                                 <div class="flex-container flex-direction-row">
@@ -89,27 +92,49 @@
             </div>
             <div class="content">
                 
-                <section class="children-properties">
-                    <h2>It's a Flex example</h2>
+                <section class="parent-properties">
+                    <h2>Order</h2>
+                    <style>
+                        
+                    </style>
                     <div class="flex-container">
-                        <div class="flex-child">
-                            <p>Opa</p>
-                        </div>
+                        <div class="flex-child white-text square" style="order: 1">1</div>
+                        <div class="flex-child white-text retangle" style="order: 3">3</div>
+                        <div class="flex-child white-text square" style="order: 1">1</div>
+                        <div class="flex-child white-text square" style="order: 1">1</div>
+                        <div class="flex-child white-text square" style="order: 2">2</div>
+                    </div>
+                    <div class="flex-container">
+                        <div class="flex-child white-text retangle" style="order: 2">2</div>
+                        <div class="flex-child white-text square" style="order: -1">-1</div>
+                        <div class="flex-child white-text square" style="order: 5">5</div>
+                        <div class="flex-child white-text square" style="order: 1">1</div>
+                        <div class="flex-child empty square" style="order: 99"></div>
+                    </div>
+                    <div class="flex-container flex-direction-column" style="min-width: 150px;">
+                        <div class="flex-child white-text" style="order: 2">2</div>
+                        <div class="flex-child white-text" style="order: 99">99</div>
+                        <div class="flex-child white-text" style="order: 2">2</div>
                     </div>
                 </section>
-    
-                <section class="children-properties">
-                    <h2>It's a Flex example</h2>
-                    <div class="flex-container">
-                        <div class="flex-child">
-                            <p>Opa</p>
-                        </div>
-                    </div>
-                </section>
-
+                
             </div>
         </div>
-
+        
     </main>
 </body>
 </html>
+<!--
+<section class="parent-properties">
+    <h2>Title here</h2>
+    <style>
+        ...
+    </style>
+    <div class="flex-container">
+        <div class="flex-child square">1</div>
+        <div class="flex-child square">2</div>
+        <div class="flex-child square">3</div>
+        <div class="flex-child square">4</div>
+    </div>
+</section>
+-->

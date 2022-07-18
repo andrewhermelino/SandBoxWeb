@@ -52,7 +52,6 @@ section {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    /* padding: 20px; */
     padding-bottom: 50px;
     padding-top: 30px;
 }
@@ -84,6 +83,22 @@ section > h2 {
 .flex-child.square {
     width: 50px;
     height: 50px;
+}
+.flex-child.retangle {
+    width: 100px;
+    height: 50px;
+}
+.flex-child.white-text {
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+}
+.flex-child.empty {
+    background-color: transparent;
+    border-color: transparent;
+    box-shadow: 0px 0px 0px transparent;
 }
 /* --Flex */
 
